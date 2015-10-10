@@ -1,0 +1,15 @@
+<div class="jumbotron" style="margin-bottom:0;background:#3498db">
+    <div class="container">
+      <h1 style="color:#FFF">{{ site.title }} &middot; {{ page.title }}</h1>
+    </div>
+  </div>
+     <div id='cssmenu' style="width:100%;background:#3498db" align="center">
+      <ul>
+        <li class=''><a href='http://andykamath.com/amin/index.html'><span>Home</span></a></li>
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li><a href='{{page.url}}'><span>{{page.title}}</span></a></li>
+        {% endif %}
+        {%endfor%}
+      </ul>
+      </div>
